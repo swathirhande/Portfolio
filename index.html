@@ -1,322 +1,852 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Swathi Rajendra Prasad - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assests/titleIcon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
-    <header>
-        <a href="#" class="logo-holder">
-
-            <div class="logo-text">Portfolio Website</div>
-        </a>
-
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contacts" class="button btn1">Contact Me</a>
-                </li>
-
-            </ul>
-            <a href="#" class="mobile-toggle" onclick="toggleMobileMenu();">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
-                </svg>
-
-            </a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero container">
-            <div class="hero-blue">
-                <div>
-                    <h1><small>Hi I'm</small>
-                        Swathi Rajendra Prasad</h1>
-                    <p class="fonts1 justify-text">
-                        I completed my Master’s in Computer Science from the University of Southern California.
-                    </p>
-                    <br>
-                    <p class="fonts1 justify-text">
-                        I'm passionate about programming, with a focus on building interactive front-end applications using React.js, HTML, CSS, Bootstrap, and JavaScript. 
-                        I also develop robust and scalable backend APIs and services using Node.js, Express, Flask, Java, and Python.
-                    </p>
-
-                    <p class="fonts1">
-
-                    </p>
-                    <br>
-                    <p class="fonts1 justify-text">
-                        I'm seeking full-time opportunities as a Full Stack Developer. 
-                        If you’re looking for a dedicated and enthusiastic developer to join your team, feel free to get in touch!
-
-                    </p>
-
-                    <br>
-                    <div class="call-to-action">
-                        <a href="./SwathiRajendraPrasad_SoftwareEngineer.pdf" target="_blank" class="button black">
-                            View Resume
+     <section class="nav-section">
+ <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand fw-bold" href="#">Swathi Rajendra Prasad</a>
+            
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Middle: 4 navigation items -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myAbout">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myEducation">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myWork">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myProjects">Projects</a>
+                    </li>
+                </ul>
+                
+                <!-- Right: 3 icons -->
+                 <!--Desktop Icons-->
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/swathiRajendraPrasad" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/swathirhande" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#myContact" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <!--Right side: Mobile Icons-->
+                <div class="social-links d-lg-none">
+                    <p>Connect with me</p>
+                    <div class="mobile-social-icons">
+                        <a href="https://www.linkedin.com/in/swathiRajendraPrasad" target="_blank" class="mobile-social-icon">
+                            <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#contacts" class="button white">
-                            Contact Me
-                        </a>                        
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/swathirhande" target="_blank">
-                            <img src="./image/github.png" alt="Github" width="48" />
+                        <a href="https://github.com/swathirhande" target="_blank" class="mobile-social-icon">
+                            <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/swathiRajendraPrasad" target="_blank">
-                            <img src="./image/linkedin.png" alt="linkedin" width="48" />
+                        <a href="#myContact" class="mobile-social-icon">
+                            <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
             </div>
+        </div>
+    </nav>
+</section>
 
-        </section>
-        <section class="logos container">
-            <div class="marquee">
-                <div class="track">
-                    <img class="logoImg"  src="./image/html.png" alt="HTML"/>
-                    <img class="logoImg" src="./image/css.png" alt="CSS"/>
-                    <img class="logoImg" src="./image/javascript.png" alt="JavaScript"/>
-                    <img class="logoImg" src="./image/bootstrap.png" alt="Bootstrap"/>
-                    <img class="logoImg" src="./image/tailwindcss.png" alt="Tailwind"/>
-                    <img class="logoImg" src="./image/typeScript.png" alt="TypeScript"/>
-                    <img class="logoImg" src="./image/angular.png" alt="Angular"/>
-                    <img class="logoImg" src="./image/react.png" alt="React"/>
-                    <img class="logoImg" src="./image/nodejs.png" alt="Nodejs"/>
-                    <img class="logoImg" src="./image/express.png" alt="Express"/>
-                    <img class="logoImg" src="./image/mongoDB.png" alt="MongoDB"/>
-                    <img class="logoImg" src="./image/gCloud.png" alt="GCloud"/>
-                    <img class="logoImg" src="./image/java.PNG" alt="Java"/>
-                    <img class="logoImg" src="./image/python.png" alt="Python"/>
-
-                    <img class="logoImg" src="./image/html.png" alt="HTML"/>
-                    <img class="logoImg" src="./image/css.png" alt="CSS"/>
-                    <img class="logoImg" src="./image/javascript.png" alt="JavaScript"/>
-                    <img class="logoImg" src="./image/bootstrap.png" alt="Bootstrap"/>
-                    <img class="logoImg" src="./image/tailwindcss.png" alt="Tailwind"/>
-                    <img class="logoImg" src="./image/typeScript.png" alt="TypeScript"/>
-                    <img class="logoImg" src="./image/angular.png" alt="Angular"/>
-                    <img class="logoImg" src="./image/react.png" alt="React"/>
-                    <img class="logoImg" src="./image/nodejs.png" alt="Nodejs"/>
-                    <img class="logoImg" src="./image/express.png" alt="Express"/>
-                    <img class="logoImg" src="./image/mongoDB.png" alt="MongoDB"/>
-                    <img class="logoImg" src="./image/gCloud.png" alt="GCloud"/>
-                    <img class="logoImg" src="./image/java.PNG" alt="Java"/>
-                    <img class="logoImg" src="./image/python.png" alt="Python"/>
-
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="skills container">
-            <h2>
-                <small>About Me</small>
-                Skills
-            </h2>
-            <div class="holder-blue">
-                <div class="left-column">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>Angular</li>
-                        <li>React</li>
-                        <li>Bootstrap</li>
-                        <li>Tailwind CSS</li>
-                    </ul>
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>PHP</li>
-
-                    </ul>
-                </div>
-                <div class="right-column">
-                    <h3> A bit about me </h3>
-                    <p class="fonts1 justify-text"> My academic journey at USC has provided a strong foundation in core Computer Science principles, including data structures, algorithms, and software engineering.  I am particularly passionate about web development and have experience building full-stack applications.</p>
-                    <p class="fonts1 justify-text"> Professionally, I have experience as a full-stack web application developer. In this role, I enhanced backend systems using Node.js and Express, implemented RESTful APIs, and managed database operations. On the frontend, I developed responsive and interactive user interfaces using React, JavaScript, and Bootstrap, focusing on performance optimization and cross-browser compatibility.</p>
-                      <p class="fonts1 justify-text"> My hands-on experience extends to building dynamic front-ends with React.js, and developing robust back-ends utilizing Node.js and Flask with MongoDB for efficient data management. This experience has solidified my skills in delivering seamless and efficient user experiences. I am excited to bring my combined academic and professional experience to a team that values innovation.
-
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="work-experience container">
-            <h2>
-                <small>Recent</small>
-                Work Experience
-            </h2>
-            <div class="jobs">
-                <article>
-                    <h3>Web Application Developer</h3>
-                    <div>2022-2023</div>
-                    <p class="justify-text"> Led the implementation of a key web application feature using JavaScript, React, Node.js, and Express.js, diligently resolving
-                        development roadblocks to enhance user engagement.</p>
-                    <p class="justify-text">Architected and implemented a RESTful API leveraging Node.js and Express.js to enable real-time data dashboard updates,
-                        accelerating data refresh frequency and minimizing latency, and proactively resolving performance bottlenecks.</p>
-                </article>
-                <article>
+    <!-- Hero Section -->
+        <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Swathi </h1>
+                <p class="hero-subtitle">
+                    <span class="typing-container">
+                        <span class="typing-text" id="typingText"></span>
+                    </span>
+                </p>
+                <p class="hero-description">
+                    <!--I'm passionate about programming, with a focus on building interactive front-end applications using React.js, HTML, CSS, Bootstrap, and JavaScript. 
+                    I'm seeking full-time opportunities as a Full Stack Developer. 
+                    If you’re looking for a dedicated and enthusiastic developer to join your team, feel free to get in touch!-->
+                    I'm a passionate software developer with a strong focus on building interactive, user-friendly front-end experiences using HTML, CSS, JavaScript, React.js, and Bootstrap. 
+                    I also enjoy working across the full stack to develop robust, scalable applications.<br> <br>
                     
-                    <h3>Junior Web Application Developer</h3>
-                    <div>2020-2021</div>
-                    <p class="justify-text"> Developed and engineered new UI features with JavaScript, HTML, CSS, and Bootstrap for a core web application, collaborating
-                        closely with the design team to boost user engagement and diminishing bounce rates.</p>
-                    <p class="justify-text"> Optimized web page functionality through meticulous JavaScript coding, resulting in increase in average session duration. </p>
-                </article>
-            </div>
-        </section>
-        <section id="projects" class="bento">
-            <h2>
-                <small>
-                    Previous
-                </small>
-                Completed Projects
-            </h2>
-            <div class="bento-grid">
-                <div class="bento-item">
-                    <h3>Stock Insights: Angular-Powered Market Analysis</h3>
-
-                    <p class="justify-text">
-                        Developed a robust stock market analysis platform using Angular, designed to provide users with in-depth stock and company information. The application seamlessly integrates with Finnhub API and Polygon.io to retrieve real-time market data, while a Node.js and Express backend efficiently manages API requests and data processing, ensuring seamless communication between the frontend and backend. </p>
-                    <p class="justify-text">
-                        Implemented key features such as dynamic stock symbol search, peer comparisons, high/low price trends, and access to the latest stock market news. These features enable users to gain valuable insights, track stock performance, and make well-informed investment decisions.
-                    </p>
-                        <p class="justify-text">To further enhance the user experience, incorporated Gemini AI to provide intelligent stock queries, delivering AI-driven insights. Designed interactive visualizations using Highcharts, allowing users to compare stock performance and analyze trends effectively.</p>
-                        </p>
-                        <p class="justify-text"> 
-                            <span class="bold-text">Frontend Technologies:</span> HTML, CSS, JavaScript, Bootstrap, Angular <br>
-                            <span class="bold-text">Backend Technologies:</span> Node.js, Express.js, MongoDB, RESTful APIs <br>
-
-                            <span class="bold-text">APIs & Tools:</span> Finnhub API, Gemini AI, Highcharts, Axios
-                        </p>
-                    <p class="justify-text">Explore the Project:
-                            <a href="https://angular-stock-frontend.onrender.com/search/home" target="_blank"> (Project Link) </a>
-                        <!--<a href="https://web-project-414120.wl.r.appspot.com/search/home" target="_blank">-->
-                         <a href="https://github.com/swathirhande/StockInsights/tree/main" target="_blank"> (View on GitHub) </a>   
-                        
-                    </p>
+                    If you're looking for a motivated and collaborative engineer who loves turning ideas into impactful products, feel free to reach out!
+                </p>
+                <div class="hero-actions">
+                    <a href="#myProjects" class="btn-primary">View My Work</a>
+                    <a href="./Resume.pdf" class="btn-secondary" target="_blank">View Resume</a>
                 </div>
-                <div class="bento-item">
-                    <h3>Real-Time Stock Monitoring App</h3>
-                    <p class="justify-text">Developed an iOS app using Swift for stock analysis, featuring real-time updates on stock prices,
-                        detailed company data, and tracking profit/loss for each stock purchased. </p>
-                    <p class="justify-text">
-                        Integrated Finnhub API and Polygon.io for accurate stock data retrieval and ensured seamless data processing with a Node.js backend.
-                    </p>
-                    <p class="justify-text">
-                        Implemented features such as auto-complete ticker search, peer comparisons, chart summaries, high/low price trends, and access to the latest top 20 stock market news articles, providing users with a comprehensive market overview.
-                    </p>
 
-                    <p class="justify-text"> <span class="bold-text">Frontend Technologies:</span> Swift (iOS) <br>
-                        <span class="bold-text">Backend Technologies:</span> Node.js, Express, MongoDB </p>
-                    <p class="justify-text">Explore the Project: <a
-                            href="https://swathirhande.github.io/CSCI571_MobileAppVideo/Assignment4CSCI_571Final.mp4"
-                            target="_blank">Video Link</a> </p>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <span class="card-title">portfolio.js</span>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-line">
+                            <span class="code-keyword">const</span> <span class="code-function">developer</span> = {
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;<span class="code-property">name</span>: <span class="code-string">"Swathi Rajendra Prasad"</span>,
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;<span class="code-property">role</span>: <span class="code-string">"Full Stack Developer"</span>,
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;<span class="code-property">skills</span>: [
+                            <span class="code-string">"HTML"</span>, 
+                            <span class="code-string">"CSS"</span>, 
+                            <span class="code-string">"JS"</span>, 
+                            <span class="code-string">"TS"</span>,
+                            <span class="code-string">"React"</span>,
+                            <span class="code-string">"Node"</span>,
+                            <span class="code-string">"MongoDB"</span>],
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;<span class="code-property">passion</span>: <span class="code-string">"Building amazing UX"</span>
+                        </div>
+                        <div class="code-line">
+                            };
+                        </div>
+                        <div class="code-line">
+                            <span class="code-comment">// Always learning & growing...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About ME-->
+     <section class="about-section" id="myAbout">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    My journey at the University of Southern California has equipped me with a strong foundation in core Computer Science principles such as data structures, algorithms, and software engineering. Over time, I’ve cultivated a deep passion for web development, with hands-on experience building responsive, full-stack applications from the ground up.
+                </p>
+                <p>
+                    Professionally, I’ve worked as a Full Stack Web Application Developer, where I strengthened backend systems using Node.js and Express, designed and integrated RESTful APIs, and handled robust database operations. On the frontend, I built performant, cross-browser-compatible interfaces using React.js, JavaScript, and Bootstrap, with a focus on clean UI/UX and optimization.
+                </p>
+                <p>
+                    Beyond that, I’ve developed dynamic frontends in React and engineered scalable backends with Node.js and Flask, using MongoDB for efficient data storage and retrieval. These experiences have honed my ability to deliver seamless, end-to-end solutions that blend reliability with great user experience.
+                </p>
+                <p>
+                    I'm eager to bring this blend of academic rigor and real-world development experience to a collaborative team that values innovation, user-centric design, and technical excellence.
+                </p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">80+</span>
+                        <span class="stat-label">Commits</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image-container">
+                    <img src="./assests/myPic.png" alt="Swathi Rajendra Prasad">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--EDUCATION-->
+    <section id="myEducation">
+        <div class="education-section">
+        <h2 class="education-title">Education</h2>
+        
+        <div class="education-container">
+            <!-- USC Education -->
+            <div class="education-item">
+                <div class="education-header">
+                    <div class="university-header">
+                        <div class="logo-placeholder">
+                            <img src="./assests/uscLogo.png" alt="USC Logo">
+                        </div>
+                        <div class="university-details">
+                            <h3 class="university-name">University of Southern California</h3>
+                            <p class="location">Los Angeles, United States</p>
+                        </div>
+                    </div>
+                    <div class="education-info">
+                        <p class="degree">Masters in Computer Science</p>
+                        <p class="grade">GPA: 3.9/4.0</p>
+                        <div class="duration">
+                            <span>Aug 2023 - May 2025</span>
+                            <span class="status-badge status-completed">Completed</span>
+                        </div>
+                        <div class="expand-arrow"></div>
+                    </div>
+                </div>
+                <div class="education-content">
+                    <div class="coursework">
+                        <h4>Relevant Coursework</h4>
+                        <div class="course-grid">
+                            <span class="course-item">Data Structures and Algorithms</span>
+                            <span class="course-item">Database Management System</span>
+                            <span class="course-item">Web Technologies</span>
+                            <span class="course-item">Advanced Data Stores</span>
+                            <span class="course-item">Information Security</span>
+                            <span class="course-item">Advanced Mobile Devices and Game Consoles</span>
+                            <span class="course-item">Information Retrieval and Web Search Engines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NMIT Education -->
+            <div class="education-item">
+                <div class="education-header">
+                    <div class="university-header">
+                        <div class="logo-placeholder">
+                            <img src="./assests/nmitLogo.png" alt="NMIT Logo">
+                        </div>
+                        <div class="university-details">
+                            <h3 class="university-name">Nitte Meenakshi Institute of Technology</h3>
+                            <p class="location">Bengaluru, India</p>
+                        </div>
+                    </div>
+                    <div class="education-info">
+                        <p class="degree">Bachelor of Engineering in Information Science</p>
+                        <p class="grade">CGPA: 9.35/10.0</p>
+                        <div class="duration">
+                            <span>Aug 2016 - Sep 2020</span>
+                            <span class="status-badge status-completed">Completed</span>
+                        </div>
+                        <div class="expand-arrow"></div>
+                    </div>
+                </div>
+                <div class="education-content">
+                    <div class="coursework">
+                        <h4>Relevant Coursework</h4>
+                        <div class="course-grid">
+                            <span class="course-item">Data Structures and Algorithms</span>
+                            <span class="course-item">Database Management System</span>
+                            <span class="course-item">Object Oriented Programming</span>
+                            <span class="course-item">Software Engineering</span>
+                            <span class="course-item">Web Technologies</span>
+                            <span class="course-item">Java Programming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <!--TECH STACKS-->
+    <section class="tech-section">
+    <div class="tech-container">
+        <div class="tech-header">
+            <h1>Technologies I Work With</h1>
+        </div>
+        
+        <div class="tech-slider">
+            <div class="tech-track">
+
+                <div class="tech-item">
+                    <img src="./assests/html.png" alt="HTML" class="tech-icon">
+                    <div class="tech-name">HTML</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/css.png" alt="CSS" class="tech-icon">
+                    <div class="tech-name">CSS</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/bootstrap.png" alt="Bootstrap" class="tech-icon">
+                    <div class="tech-name">Bootstrap</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/javascript.png" alt="JavaScript" class="tech-icon">
+                    <div class="tech-name">JavaScript</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/typeScript.png" alt="TypeScript" class="tech-icon">
+                    <div class="tech-name">TypeScript</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/tailwindcss.png" alt="Tailwind CSS" class="tech-icon">
+                    <div class="tech-name">Tailwind CSS</div>
                 </div>
                 
-                <div class="bento-item">
-                    <h3>Quick-Serve: Food Ordering & Delivery Tracking </h3>
-                    <p class="justify-text">Quick-Serve is an advanced food ordering and delivery tracking platform designed to revolutionize the dining experience. 
-                        Built with the MERN stack and TypeScript, the application enables users to effortlessly search for their favorite dishes, add items to the cart, place orders, and track deliveries in real-time.      
-                    </p>
-                    <p class="justify-text">Integrated a Gemini AI-powered chatbot to provide personalized meal recommendations, enhancing user engagement and making dining choices more interactive and intuitive.
-                    </p>  
-                    <p class="justify-text"> 
-                        <span class="bold-text">Frontend Technologies:</span> React, TypeScript, Tailwind CSS  <br>
-                        <span class="bold-text">Backend Technologies:</span> Node.js, Express, MongoDB <br>
-                        <span class="bold-text">Other Integrations:</span> Auth0 (Authentication), Stripe (Payment Processing), Gemini AI
-                    </p>
-                    <p class="justify-text">Explore the Project: 
-                    <a href="https://mern-food-ordering-app-frontend-kzoa.onrender.com/" target="_blank">(Project Link)</a>
-                    <a href="https://github.com/swathirhande/Quick-Serve/tree/main" target="_blank">(View on GitHub)</a>
-                    </p>
+                <div class="tech-item">
+                    <img src="./assests/react.png" alt="React" class="tech-icon">
+                    <div class="tech-name">React</div>
                 </div>
 
-                <div class="bento-item">
-                    <h3>YelpCamp: Campground Exploration and Review </h3>
-                    <p class="justify-text">YelpCamp is an immersive full-stack web application designed for camping enthusiasts to discover, review, and share their favorite campgrounds. Built with Node.js, Express, MongoDB, JavaScript, and EJS, the platform allows users to easily browse, add, and review campgrounds, fostering a vibrant community of camping lovers. 
-                        The dynamic and responsive UI enhances the overall user experience.
-                    </p>
-                    <p class="justify-text">I engineered secure user authentication with Passport.js and integrated interactive maps via MapTiler Cloud, ensuring a smooth and interactive experience across devices. Utilizing Bootstrap, I created a mobile-optimized design to provide an intuitive and engaging browsing experience.
-                    </p>
-                    <p class="justify-text"> 
-                        <span class="bold-text">Frontend Technologies:</span> EJS (Embedded JavaScript Templates), Bootstrap, JavaScript  <br>
-                        <span class="bold-text">Backend Technologies:</span> Node.js, Express, MongoDB, Mongoose, Passport.js (User Authentication) <br>
-                        <span class="bold-text"> Cloud Services & Deployment:</span> MapTiler Cloud (Interactive Maps), Render (Deployment)
-                    </p>
-                    <p class="justify-text">Explore the Project: 
-                    <a href="https://yelpcamp-1-dpmx.onrender.com/" target="_blank">(Project Link)</a> 
-                    <a href="https://github.com/swathirhande/YelpCamp" target="_blank">(View on GitHub)</a>    
-                    </p>
+                <div class="tech-item">
+                    <img src="./assests/Redux.png" alt="Redux" class="tech-icon">
+                    <div class="tech-name">Redux</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/Vite.png" alt="Vite" class="tech-icon">
+                    <div class="tech-name">Vite</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/nodejs.png" alt="Node.js" class="tech-icon">
+                    <div class="tech-name">Node.js</div>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="./assests/express.png" alt="Express" class="tech-icon">
+                    <div class="tech-name">Express</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/mongoDB.png" alt="MongoDB" class="tech-icon">
+                    <div class="tech-name">MongoDB</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/MySQL.png" alt="MySQL" class="tech-icon">
+                    <div class="tech-name">MySQL</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/python.png" alt="Python" class="tech-icon">
+                    <div class="tech-name">Python</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/java.PNG" alt="Java" class="tech-icon">
+                    <div class="tech-name">Java</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/github.png" alt="Git" class="tech-icon">
+                    <div class="tech-name">Git</div>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="./assests/gCloud.png" alt="GCloud" class="tech-icon">
+                    <div class="tech-name">GCLoud</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/NPM.png" alt="NPM" class="tech-icon">
+                    <div class="tech-name">NPM</div>
+                </div>
+                    
+                <div class="tech-item">
+                    <img src="./assests/vscode.png" alt="VS Code" class="tech-icon">
+                    <div class="tech-name">VS Code</div>
+                </div>
+
+                <!-- Duplicate items for seamless loop -->
+                <div class="tech-item">
+                    <img src="./assests/html.png" alt="HTML" class="tech-icon">
+                    <div class="tech-name">HTML</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/css.png" alt="CSS" class="tech-icon">
+                    <div class="tech-name">CSS</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/bootstrap.png" alt="Bootstrap" class="tech-icon">
+                    <div class="tech-name">Bootstrap</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/javascript.png" alt="JavaScript" class="tech-icon">
+                    <div class="tech-name">JavaScript</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/typeScript.png" alt="TypeScript" class="tech-icon">
+                    <div class="tech-name">TypeScript</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/tailwindcss.png" alt="Tailwind CSS" class="tech-icon">
+                    <div class="tech-name">Tailwind CSS</div>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="./assests/react.png" alt="React" class="tech-icon">
+                    <div class="tech-name">React</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/Redux.png" alt="Redux" class="tech-icon">
+                    <div class="tech-name">Redux</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/Vite.png" alt="Vite" class="tech-icon">
+                    <div class="tech-name">Vite</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/nodejs.png" alt="Node.js" class="tech-icon">
+                    <div class="tech-name">Node.js</div>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="./assests/express.png" alt="Express" class="tech-icon">
+                    <div class="tech-name">Express</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/mongoDB.png" alt="MongoDB" class="tech-icon">
+                    <div class="tech-name">MongoDB</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/MySQL.png" alt="MySQL" class="tech-icon">
+                    <div class="tech-name">MySQL</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/python.png" alt="Python" class="tech-icon">
+                    <div class="tech-name">Python</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/java.PNG" alt="Java" class="tech-icon">
+                    <div class="tech-name">Java</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/github.png" alt="Git" class="tech-icon">
+                    <div class="tech-name">Git</div>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="./assests/gCloud.png" alt="GCloud" class="tech-icon">
+                    <div class="tech-name">GCloud</div>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assests/NPM.png" alt="NPM" class="tech-icon">
+                    <div class="tech-name">NPM</div>
+                </div>
+                    
+                <div class="tech-item">
+                    <img src="./assests/vscode.png" alt="VS Code" class="tech-icon">
+                    <div class="tech-name">VS Code</div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--WORK EXPERIENCE-->
+    <section class="work-section" id="myWork">
+            <div class="work-container">
+        <div class="header">
+            <h1>Work Experience</h1>
+            <p>Professional journey through innovation and growth</p>
+        </div>
+
+        <div class="timeline">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-info">
+                        <div class="job-title">Web Application Developer</div>
+                        <div class="company">Revoseven Technologies</div>
+                        <div class="location">📍 Bangalore, Karnataka</div>
+                    </div>
+                    <div class="duration">2022 - 2023</div>
+                </div>
+                <div class="description">
+                    Led implementation of key web application features using JavaScript, React, Node.js, and Express.js, driving 30% increase in user engagement through proactive problem-solving and seamless team coordination.
+                <div class="achievement">
+                    <div class="achievement-title">Key Achievement</div>
+                    <div class="achievement-desc">Architected scalable React components and state management system, reducing response time by 60% and enhancing overall application performance</div>
+                </div>
+                <div class="skills">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">REST API</span>
                 </div>
             </div>
-        </section>
-        <section id="contacts" class="contact">
-            <h2>
-                Contact Me
-            </h2>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <h3 id="form-title">Send me a message</h3>
-                    <form action="https://formspree.io/f/mnnpynvw" method="POST">
-                        <fieldset>
-                            <div class="form-field">
-                                <input name="name" type="text" id="name" placeholder="Your Name"></input>
-                            </div>
-                            <div class="form-field">
-                                <input name="email" type="email" id="email" placeholder="Your Email"></input>
-                            </div>
-                            <div class="form-field">
-                                <input name="Subject" type="text" id="subject" placeholder="Subject"></input>
-                            </div>
-                            <div class="form-field">
-                                <textarea name="message" type="text" id="message" placeholder="Your Message"></textarea>
-                            </div>
-                        </fieldset>
-                        <input id="form-btn" type="submit" value="send">
-                    </form>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-info">
+                        <div class="job-title">Junior Web Application Developer</div>
+                        <div class="company">Revoseven Technologies</div>
+                        <div class="location">📍 Bangalore, Karnataka</div>
+                    </div>
+                    <div class="duration">2020 - 2021</div>
                 </div>
-                <div class="contact-info">
-                    <h3>Email Me At </h3>
-                    <a href="mailto:swathi@usc.edu">
-                        <p id="mailids">swathi@usc.edu</p>
-                    </a>
-                    <h3>Find Me On </h3>
-                    <div class="contact-links">
-                        <a href="https://www.linkedin.com/in/swathiRajendraPrasad" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/swathirhande" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.facebook.com/swathi.r.589100" target="_blank"><i class="fab fa-facebook"></i></a>
+                <div class="description">
+                    Spearheaded frontend development with JavaScript, HTML, CSS, and Bootstrap, collaborating with design teams to boost user engagement by 20% and reduce bounce rates by 15%.
+                </div>
+                <div class="achievement">
+                    <div class="achievement-title">Key Achievement</div>
+                    <div class="achievement-desc">Eliminated 35% of client-side bugs through comprehensive unit testing and JavaScript error boundaries implementation</div>
+                </div>
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">UI/UX</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-info">
+                        <div class="job-title">Technical Lead</div>
+                        <div class="company">Íignis Innovations Lab</div>
+                        <div class="location">📍 Bangalore, Karnataka</div>
+                    </div>
+                    <div class="duration">2018 - 2020</div>
+                </div>
+                <div class="description">
+                    Mentored students in advanced coding practices and led development of NotesApp, a collaborative learning platform. Organized technical workshops and conducted code reviews to foster innovation.
+                </div>
+                <div class="achievement">
+                    <div class="achievement-title">Key Achievement</div>
+                    <div class="achievement-desc">Built comprehensive student collaboration platform enabling peer-to-peer learning and resource sharing</div>
+                </div>
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Leadership</span>
+                    <span class="skill-tag">Mentoring</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-info">
+                        <div class="job-title">Software Development Intern</div>
+                        <div class="company">Unisys</div>
+                        <div class="location">📍 Bangalore, Karnataka</div>
+                    </div>
+                    <div class="duration">2019 - 2019</div>
+                </div>
+                <div class="description">
+                    Developed UI for VESA blockchain web application and optimized functionality through JavaScript coding. Implemented client-side form validation to enhance data quality and user experience.
+                </div>
+                <div class="achievement">
+                    <div class="achievement-title">Key Achievement</div>
+                    <div class="achievement-desc">Successfully delivered blockchain web application UI with optimized performance and validation systems</div>
+                </div>
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">MySQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--PROJECT-->
+        <section class="projects-section" id="myProjects">
+        <div class="project-container">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Featured Project 1: Quick-Serve -->
+                <div class="card featured-project" data-project="quickserve">
+                    <div class="image-section">
+                            <img src="./assests/QuickServe1.png" 
+                             alt="Food Ordering Platform" 
+                             class="card-image">
+                        
+                        <div class="hover-text-overlay">
+                            <div class="hover-text">
+                                Developed a food ordering platform using Vite, React, Node.js, and MongoDB, increasing order efficiency by 40% and reducing manual processes by 30% through real-time order management and RESTful APIs.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 class="title">Quick-Serve: Food Ordering & Delivery Tracking</h3>
+                        
+                        <div class="tech-tags">
+                            <span class="tag">MERN Stack</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://mern-food-ordering-app-frontend-kzoa.onrender.com/" class="action-btn live-demo" target="_blank">
+                                Live Demo <span class="arrow">→</span>
+                            </a>
+                            <div class="divider"></div>
+                            <a href="https://github.com/swathirhande/Quick-Serve/tree/main" class="action-btn view-code" target="_blank">
+                                View Code <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Project 2: YelpCamp -->
+                <div class="card featured-project" data-project="yelpcamp">
+                    <div class="image-section">
+                         <img src="./assests/YelpCamp.png" 
+                             alt="Camping Web Application" 
+                             class="card-image">
+                        
+                        <div class="hover-text-overlay">
+                            <div class="hover-text">
+                                Built a full-stack web application using JavaScript, Express, Node.js, and MongoDB enabling users to explore, add, and review campgrounds, and boosted user engagement by 30% with a dynamic, responsive UI.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 class="title">YelpCamp: Full-Stack Web Application</h3>
+                        
+                        <div class="tech-tags">
+                            <span class="tag">EJS</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://yelpcamp-1-dpmx.onrender.com/" class="action-btn live-demo" target="_blank">
+                                Live Demo <span class="arrow">→</span>
+                            </a>
+                            <div class="divider"></div>
+                            <a href="https://github.com/swathirhande/YelpCamp" class="action-btn view-code" target="_blank">
+                                View Code <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feautured Project 3:Stock Insights -->
+                <div class="card featured-project" data-project="stockinsights">
+                    <div class="image-section">
+                        <img src="./assests/StockInsights.png" 
+                             alt="Stock Analysis Platform" 
+                             class="card-image">
+                        
+                        <div class="hover-text-overlay">
+                            <div class="hover-text">
+                                Engineered an Angular-based stock analysis platform using Finnhub API, Node.js, and MongoDB, optimizing data retrieval by 35%. Introduced Gemini AI for real-time stock insights, driving engagement by 40%.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 class="title">Stock Insights: Angular-Powered Market Analysis</h3>
+                        
+                        <div class="tech-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Gemini AI</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://angular-stock-frontend.onrender.com/search/home" class="action-btn live-demo" target="_blank">
+                                Live Demo <span class="arrow">→</span>
+                            </a>
+                            <div class="divider"></div>
+                            <a href="https://github.com/swathirhande/StockInsights/tree/main" class="action-btn view-code" target="_blank">
+                                View Code <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--Additional Projects-->
+                <!-- Hidden Project 1: Real-Time Stock Monitoring -->
+                <div class="card hidden-projects " data-project="stockmonitor">
+                    <div class="image-section">
+                        <img src="./assests/StockApp.png" 
+                             alt="Stock Monitoring App" 
+                             class="card-image">
+                        
+                        <div class="hover-text-overlay">
+                            <div class="hover-text">
+                                Crafted a real-time stock tracker in Swift, reducing analysis time by 30% and lifting retention by 25%. Built the Node.js backend, integrated MongoDB, and employed Finnhub API for streamlined data processing.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 class="title">Real-Time Stock Monitoring App</h3>
+                        
+                        <div class="tech-tags">
+                            <span class="tag">Swift</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Custom UI</span>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://swathirhande.github.io/CSCI571_MobileAppVideo/Assignment4CSCI_571Final.mp4" class="action-btn live-demo" target="_blank">
+                                Video Demo <span class="arrow">→</span>
+                            </a>   
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Project 2: Todo App -->
+                <div class="card hidden-projects" data-project="todoapp">
+                    <div class="image-section">
+                        <img src="./assests/Todo.png" 
+                             alt="Todo Task Manager" 
+                             class="card-image">
+                        
+                        <div class="hover-text-overlay">
+                            <div class="hover-text">
+                                A modern, feature-rich Todo App built with React, Redux Toolkit, Tailwind CSS & Local Storage. Features persistent storage, Redux state management, and responsive UI for seamless task management.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 class="title">Todo App – React & Redux Task Manager</h3>
+                        
+                        <div class="tech-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Redux Toolkit</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Local Storage</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://github.com/swathirhande/Todo_App" class="action-btn view-code" target="_blank">
+                                View Code <span class="arrow">→</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-</body>
 
+            <!-- Toggle Button positioned after the grid -->
+            <div class="toggle-container">
+                <button class="toggle-btn" id="toggleBtn">Show All Projects</button>
+            </div>
+        </div>
+    </section>
+    
+    <!--CONTACT-->
+    <section class="contact-section" id="myContact">
+        <div class="contactMe-container">
+        <!-- Contact Header Section -->
+        <div class="contact-header">
+            <h1>Let's Connect</h1>
+            <div class="profile-info">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MSCS USC grad | Seeking full time opportunities</span>
+            </div>
+            <div class="action-buttons">
+                <button class="contact-btn contact-btn-primary" onclick="scrollToForm()">
+                    <i class="fas fa-envelope"></i>
+                    Email Me
+                </button>
+                <button class="contact-btn contact-btn-secondary" onclick="window.open('https://www.linkedin.com/in/swathiRajendraPrasad', '_blank')">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </button>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="contact-form-section" id="contact-form">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" action="https://formspree.io/f/mnnpynvw" method="POST" onsubmit="handleSubmit(event)">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email ID *</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="Subject" placeholder="Subject">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, opportunity, or how I can help..." required></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="contact-btn contact-btn-primary submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+  </section>
+
+
+    <script src="script.js"></script>
+</body>
 </html>
+
